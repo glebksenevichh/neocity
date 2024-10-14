@@ -1,0 +1,76 @@
+body
+{
+    background-color: black;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send canvas to the background */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(0deg);
+        color: rgb(23, 207, 47);
+    }
+
+    25% {
+        transform: scale(1.05) rotate(3deg);
+        color: rgb(227, 16, 62);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(6deg);
+        color: rgb(34, 100, 224);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(-3deg);
+        color: rgb(255, 255, 255);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        color: rgb(23, 207, 47);
+    }
+}
+
+#welcome
+{
+    display: flex;
+    justify-content: center;
+
+    margin: 10px;
+    margin-top: 2%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+
+    animation: pulse 5s infinite ease-in-out;
+}
+
+#scroller
+{
+    display: flex;
+    justify-content: center;
+
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.scroller_item
+{
+    display: flex;
+    flex-direction: row;
+}
+#scroller_item p
+{
+    color: white;
+}
