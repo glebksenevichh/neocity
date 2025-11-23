@@ -2,19 +2,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nord's web landing</title>
-    <link href="./styles.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="./background.js"></script>
-</head>
+    <title>_nord_</title>
 
+    <!-- css imports -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./marquee.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- js imports -->
+    <script src="./js/last_played.js" defer></script>
+    <script src="./js/hit_count+last_updated.js" defer></script>
+
+</head>
 <body>
-   <h1 id="welcome">Welcome to the Goog Zone!!!!!!!</h1> 
-   <div id="scroller">
-            <div class="scroller_item">
-                <h3>Visit count:</h3>
-                <script type="text/javascript" src="//counter.websiteout.com/js/2/9/0/0"></script>
+    <div id="content_block">
+        <!-- Marquee -->
+        <div class="scrolling-text-container">
+            <div class="scrolling-text-inner" style="--marquee-speed: 45s; --direction:scroll-left" role="marquee">
+                <div class="scrolling-text">
+                    <div class="scrolling-text-item">Did you know? This website is never abandoned!!</div>
+                    <div class="scrolling-text-item">I am currently listening to: <span id="song">NOTHING!</span></div>
+                    <div class="scrolling-text-item">The last time I updated this website was: <span id="lastupdate">Loading...</span></div>
+                    <div class="scrolling-text-item">You are the <span id="hitcount">0</span>th person to visit this website!</div>
+                </div>
+                <div class="scrolling-text">
+                    <div class="scrolling-text-item">Did you know? This website is never abandoned!!</div>
+                    <div class="scrolling-text-item">I am currently listening to: <span id="song">NOTHING!</span></div>
+                    <div class="scrolling-text-item">The last time I updated this website was: <span id="lastupdate">Loading...</span></div>
+                    <div class="scrolling-text-item">You are the <span id="hitcount">0</span>th person to visit this website!</div>
+                </div>
             </div>
-   </div> 
+        </div>
+    </div>
 </body>
 </html>

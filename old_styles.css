@@ -1,0 +1,124 @@
+:root
+{
+ --content-width: 50%; 
+}
+
+html, body {
+  /* https://www.cursors-4u.com */
+   cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur69.cur), default;
+}
+
+body
+{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+p
+{
+ color: white;
+ font-size: 1.5rem;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* send canvas to the background */
+}
+
+/* welcome text */
+#welcome
+{
+    font-family: "bankprinter", cursive, sans-serif;
+    font-size: 5rem;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    width: auto;
+    user-select: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+    text-decoration: white wavy underline;
+}
+
+#welcome-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12.5%;
+}
+
+#header-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.vibrate
+{
+  animation:vibrate 0.5s linear both
+} 
+@keyframes vibrate
+{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}
+}
+/* ----------------------- */
+
+#content
+{
+background: #050505;
+background: radial-gradient(circle, rgba(5, 5, 5, 1) 0%, rgba(23, 23, 23, 1) 100%);
+  width: 50%;
+  margin: auto;
+  min-height: 100vh;
+  padding-top: 1px;
+}
+
+/* scroller */
+.marquee
+{
+  user-select: none;
+  background-color: black;
+  border: 5px groove white;
+  margin: auto;
+  margin-top: -125px;
+  width: var(--content-width);
+  padding: 8px;
+}
+
+.button-marquee
+{
+  margin: auto;
+  width: var(--content-width);
+}
+
+.main
+{
+  width: var(--content-width);
+  margin: auto;
+  margin-top: 2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0px 20px 20px 20px;
+  border: 2px solid white;
+}
+  
+.about_me
+{
+  font-family: "bankprinter";
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 5px;
+}
+
+.about_me_text
+{
+  font-size: 1em;
+  font-family: "bankprinter";
+  color: white;
+}

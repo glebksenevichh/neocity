@@ -1,95 +1,15 @@
-body
+body 
 {
-    background-color: black;
+  background-image: url("images/textures/Skypurp.png");
+  background-repeat: repeat;
+  background-size: 200px;
 }
 
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Send canvas to the background */
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1) rotate(0deg);
-        color: rgb(23, 207, 47);
-    }
-
-    25% {
-        transform: scale(1.05) rotate(3deg);
-        color: rgb(227, 16, 62);
-    }
-
-    50% {
-        transform: scale(1.1) rotate(6deg);
-        color: rgb(34, 100, 224);
-    }
-
-    75% {
-        transform: scale(1.05) rotate(-3deg);
-        color: rgb(255, 255, 255);
-    }
-
-    100% {
-        transform: scale(1) rotate(0deg);
-        color: rgb(23, 207, 47);
-    }
-}
-
-@keyframes scroll 
+#content_block
 {
-    0%
-    {
-        transform: translateX(300%);
-    }
-    100%
-    {
-        transform: translateX(-400%);
-    }
-}
-
-#welcome
-{
-    display: flex;
-    justify-content: center;
-
-    margin: 10px;
-    margin: 3% 0;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color: white;
-
-    animation: pulse 5s infinite ease-in-out;
-}
-
-#scroller
-{
-    display: flex;
-    justify-content: center;
-
-    width: 80%;
-    margin: auto;
-    height: auto;
-
-    background-color: rgba(0, 0, 0, 1);
-    border-style: outset;
-    border-width: 5px;
-    border-color: rgba(255, 255, 255, 0.7);
-
-    overflow: hidden;
-}
-
-.scroller_item
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    animation: scroll 15s linear infinite;
-}
-.scroller_item h3
-{
-    color: white;
-    margin: 0;
-    width: 100%;
+  width: 75%;
+  background-color:black;
+  min-height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
 }
