@@ -1,6 +1,6 @@
 let user = 'gleb_ksenevich'
 let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
-let song = document.querySelector('#song');
+let songElements = document.querySelectorAll('.song');
 
 fetch(url)
   .then(function (response) {
@@ -10,5 +10,9 @@ fetch(url)
     let artistName = json['track']['artist']['#text'];
     let trackUrl = json['track']['url'];
     
-    song.innerHTML = '<a href="' + trackUrl + '" target="_blank" style="color: inherit;">' + trackName + ' - ' + artistName + '</a>';
+    let songHTML = '<a href="' + trackUrl + '" target="_blank" style="color: inherit;">' + trackName + ' - ' + artistName + '</a>';
+    
+    for (let i = 0; i < songElements.length; i++) {
+      songElements[i].innerHTML = songHTML;
+    }
   });

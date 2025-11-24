@@ -3,7 +3,9 @@
     border-radius: 4px;
     overflow: hidden;
     background-color: black;
-    border: 5px groove white;
+    border: 5px groove black;
+    border-top: none;
+    border-left: none;
 }
 
 /* Inner container styles */
@@ -30,8 +32,7 @@
     animation: var(--direction) var(--marquee-speed) linear infinite;
 }
 
-/* Pause the animation when a user hovers over it */
-.scrolling-text-container:hover .scrolling-text-inner>div {
+.scrolling-text-inner.paused > div {
     animation-play-state: paused;
 }
 
@@ -54,4 +55,16 @@
     100% {
         transform: translateX(0%);
     }
+}
+
+
+#button_marquee
+{
+    background-image: url("images/textures/blackmarble.jpg");
+
+    width: 75%;
+    margin: auto;
+
+    border: 5px groove white;
+    border-top: none;
 }
