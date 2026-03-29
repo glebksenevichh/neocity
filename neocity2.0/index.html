@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_nord_</title>
+
+    <!-- css imports -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./marquee.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- js imports -->
+    <script src="./js/marquee_scripts/last_played.js" defer></script>
+    <script src="./js/marquee_scripts/hit_count+last_updated.js" defer></script>
+    <script src="./js/marquee_scripts/marquee_controls.js"></script>
+    <script src="./js/bouncing_nord.js" defer></script>
+    <script src="./js/steam_happy_changer.js" defer></script>
+</head>
+<body>
+    <img id="nord" src="./images/nordspin.gif" draggable="false" alt="bouncing nord :)">
+
+    <div id="content_block">
+        <div id="tab">
+
+        </div>
+<!--
+        <div id="marquee_container">
+            <div id="main_marquee">
+                <!-- Marquee ->
+                <div class="scrolling-text-container" id="main_marquee_scroll">
+                    <div class="scrolling-text-inner" style="--marquee-speed: 45s; --direction:scroll-left" role="marquee">
+                        <div class="scrolling-text">
+                            <div class="scrolling-text-item">Did you know? This website is never abandoned!!</div>
+                            <div class="scrolling-text-item">I am currently listening to: <span class="song">NOTHING!</span></div>
+                            <div class="scrolling-text-item">The last time I updated this website was: <span class="lastupdate">Loading...</span></div>
+                            <div class="scrolling-text-item">You are the <span class="hitcount">0</span>th person to visit this website!</div>
+                        </div>
+                        <div class="scrolling-text">
+                            <div class="scrolling-text-item">Did you know? This website is never abandoned!!</div>
+                            <div class="scrolling-text-item">I am currently listening to: <span class="song">NOTHING!</span></div>
+                            <div class="scrolling-text-item">The last time I updated this website was: <span class="lastupdate">Loading...</span></div>
+                            <div class="scrolling-text-item">You are the <span class="hitcount">0</span>th person to visit this website!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marquee pause button ->
+            <img id="marquee_controls" onclick="change_marquee_image()" src="./images/pause.GIF" style="width: 100px;">
+        </div>
+
+
+
+        <div id="about_me_container">
+
+            <div id="text_interests_container">
+
+                <!-- about me text ->
+                <div id="about_me_text">
+                    <p class="text" style="padding-left: 5px; margin-bottom: 5px;">Hi, I'm nord! I like the internet and also the computer. Maybe some other things too... Feel free to look around and don't forget to sign the guest book before you head out!                 
+                        <img id="steamhappy" src="./images/steam_happy.png" style="max-width: 40px; vertical-align: middle;">
+                    </p>
+                </div>
+                <div id="owl_divider">
+                    <img src="images/dividers/owl_divider.gif">
+                    <p class="text" style="font-size: 20px; font-weight: bold;">some stuff i like</p>
+                </div>
+                <div id="interests_table" style="padding-left: 5px;">
+                    <div style="display: flex; width: 95%;">
+                        <!-- Games Column ->
+                        <div class="column-container">
+                            <div class="column-header">games</div>
+                            <div class="column-scroll">
+                                <div class="column-item">cs2</div>
+                                <div class="column-item">dark souls 1</div>
+                                <div class="column-item">despelote</div>
+                                <div class="column-item">furi</div>
+                                <div class="column-item">homm3</div>
+                                <div class="column-item">disco elysium</div>
+                                <div class="column-item">nier automata & replicant</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Music Column ->
+                        <div class="column-container">
+                            <div class="column-header">music</div>
+                            <div class="column-scroll">
+                                <div class="column-item"><a href="images/topster.png">check out the topster</a></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Books Column ->
+                        <div class="column-container">
+                            <div class="column-header">books</div>
+                            <div class="column-scroll">
+                                <div class="column-item">Currently reading: battle royale</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Movies Column ->
+                        <div class="column-container">
+                            <div class="column-header">movies</div>
+                            <div class="column-scroll">
+                                <div class="column-item">movie</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fire_container">
+            <img src="images/fire2.gif" alt="fire">
+            <img src="images/fire2.gif" alt="fire">
+        </div>
+    </div>
+
+
+    <!-- button_marquee ->
+    <div class="scrolling-text-container" id="button_marquee">
+        <div class="scrolling-text-inner" style="--marquee-speed: 50s; --direction:scroll-right" role="marquee">
+            <div class="scrolling-text">
+                <div class="scrolling-text-item"><a href="https://buttoncollection.neocities.org/"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.google.com/search?q=website"><img src="images\buttons\7.gif"></a></div>
+                <div class="scrolling-text-item"><a href="images\eyes.jpg"><img src="images\buttons\bestview.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://blog.spacehey.com/entry?id=1419772"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://qntm.org/camtime"><img src="images\buttons\camtime.png"></a></div>
+                <div class="scrolling-text-item"><a href="https://music.apple.com/ca/album/more-crazy-hits/918460366"><img src="images\buttons\crazyfrog.gif"></a></div>              
+                <div class="scrolling-text-item"><a href="https://windscribe.com/blog/get-away-from-google/"><img src="images\buttons\fckgoogle.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.firefox.com/en-US/?utm_campaign=SET_DEFAULT_BROWSER"><img src="images\buttons\firefox4.gif"></a></div>                
+                <div class="scrolling-text-item"><img src="images\buttons\freegaza.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\hair.gif"></div>              
+                <div class="scrolling-text-item"><img src="images\buttons\java2.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\macbutton.gif"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\me_released.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\mousemade.gif"></div>                
+                <div class="scrolling-text-item"><img src="images\buttons\MP3 4 Real 3.jpg"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\mysterysite.gif"></div>                
+                <div class="scrolling-text-item"><img src="images\buttons\neocities_hosted.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\neocities2bit.png"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\newbutton.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\newegg.png"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\nogluck.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\sucks.gif"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\transnow2.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\webpassion.gif"></div>                
+            </div>
+            <div class="scrolling-text">
+                <div class="scrolling-text-item"><a href="https://buttoncollection.neocities.org/"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.google.com/search?q=website"><img src="images\buttons\7.gif"></a></div>
+                <div class="scrolling-text-item"><a href="images\eyes.jpg"><img src="images\buttons\bestview.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://blog.spacehey.com/entry?id=1419772"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://qntm.org/camtime"><img src="images\buttons\camtime.png"></a></div>
+                <div class="scrolling-text-item"><a href="https://music.apple.com/ca/album/more-crazy-hits/918460366"><img src="images\buttons\crazyfrog.gif"></a></div>              
+                <div class="scrolling-text-item"><a href="https://windscribe.com/blog/get-away-from-google/"><img src="images\buttons\fckgoogle.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.firefox.com/en-US/?utm_campaign=SET_DEFAULT_BROWSER"><img src="images\buttons\firefox4.gif"></a></div>                
+                <div class="scrolling-text-item"><img src="images\buttons\freegaza.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\hair.gif"></div>              
+                <div class="scrolling-text-item"><img src="images\buttons\java2.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\macbutton.gif"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\me_released.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\mousemade.gif"></div>                
+                <div class="scrolling-text-item"><img src="images\buttons\MP3 4 Real 3.jpg"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\mysterysite.gif"></div>                
+                <div class="scrolling-text-item"><img src="images\buttons\neocities_hosted.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\neocities2bit.png"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\newbutton.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\newegg.png"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\nogluck.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\sucks.gif"></div>               
+                <div class="scrolling-text-item"><img src="images\buttons\transnow2.gif"></div>
+                <div class="scrolling-text-item"><img src="images\buttons\webpassion.gif"></div>                
+            </div>
+        </div>
+    </div>
+-->
+
+</body>
+</html>

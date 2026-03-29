@@ -1,0 +1,158 @@
+body 
+{
+  background-image: url("images/textures/Skypurp.png");
+  background-repeat: repeat;
+  background-size: 200px;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#nord
+{
+    z-index: 9999; 
+    position: fixed;
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+}
+
+#content_block
+{
+  background: #000000;
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(28, 28, 28, 1) 100%);
+  background-image: url(images/textures/blueup.png);
+
+  width: 75%;
+  min-height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 5px black outset;
+
+  position: relative;
+}
+
+#welcome_img
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome_container
+{
+  display: flex;
+  flex-direction: row;
+
+  margin: auto;
+}
+
+#welcome_container img
+{
+  width: 250px;
+  border: 5px white outset;
+}
+
+#about_me_container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#about_me_text
+{
+  background: white;
+}
+
+#text_interests_container
+{
+  overflow: scroll;
+}
+
+#owl_divider
+{
+  overflow: hidden; 
+  margin-bottom: 10px;
+}
+#owl_divider p
+{
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.column-container
+{
+  flex: 1;
+  border: 1px solid white;
+}
+
+.column-header
+{
+  color: white;
+  background-color: #1c1c1c;
+  padding: 8px;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.column-scroll
+{
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.column-item
+{
+  color: white;
+  padding: 8px;
+  border-bottom: 1px solid white;
+}
+
+.column-item:last-child
+{
+  border-bottom: none;
+}
+
+#fun_buttons
+{
+  display: flex;
+  justify-content: space-around; 
+}
+
+#fun_buttons img
+{
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+
+  padding: 10px;
+  border: none;
+}
+
+.text
+{
+  color: white;
+  font-size: clamp(16px, 1.25vw, 30px); /* minimum, preferred, maximum */
+  font-weight: 600;
+}
+
+#fire_container
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 0;
+}
+
+#fire_container img
+{
+  flex: 1;
+  width: 50%;
+  height: auto;
+  display: block;
+}

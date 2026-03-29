@@ -1,0 +1,182 @@
+body 
+{
+  background-image: url("images/page_bg.png");
+  background-repeat: repeat;
+  background-size: 800px;
+  image-rendering: pixelated;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a 
+{
+  color: white;
+  display: inline-block;
+  transition: transform 0.3s repeat;
+}
+
+a:visited 
+{
+  color: white;
+}
+
+#lightswitch
+{
+  cursor: pointer;
+  width: clamp(50px, 3vw, 60px);
+
+  position: fixed;
+  left: 92.5%;
+
+  user-select: none;
+}
+@media (max-width: 850px) 
+{
+    #lightswitch 
+    {
+        left: 89%;
+    }
+}
+
+#guestbook_gif
+{
+  cursor: pointer;
+  width: 150px;
+  height: auto;
+}
+
+#nord
+{
+    z-index: 9999; 
+    position: fixed;
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+}
+
+#content_block
+{
+  background: rgba(0,0,0, 0.85);
+
+  width: 75%;
+  min-height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 5px black outset;
+
+  position: relative;
+}
+
+#welcome_container img
+{
+  width: 250px;
+  border: 5px white outset;
+}
+
+#interests_table
+{
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
+
+#text_interests_container
+{
+  overflow: scroll;
+}
+
+.column-container
+{
+  flex: 1;
+  border: 1px solid white;
+}
+
+.column-header
+{
+  color: white;
+  background-color: #1c1c1c;
+  padding: 8px;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.column-scroll
+{
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.column-item
+{
+  color: white;
+  padding: 8px;
+  border-bottom: 1px solid white;
+}
+
+.column-item:last-child
+{
+  border-bottom: none;
+}
+
+#fun_buttons
+{
+  display: flex;
+  justify-content: space-around; 
+}
+
+#fun_buttons img
+{
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+
+  padding: 10px;
+  border: none;
+}
+
+.text
+{
+  color: white;
+}
+
+.heading
+{
+  text-align: center;
+  text-decoration: underline;
+  padding: 50px 0px;
+}
+
+.post
+{
+  width: 95%;
+  height: auto;
+  margin: auto;
+  border: white 5px solid;
+}
+
+#exit_links
+{
+  display: flex;
+}
+
+#fire_container
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 0;
+}
+
+#fire_container img
+{
+  flex: 1;
+  width: 50%;
+  height: auto;
+  display: block;
+}

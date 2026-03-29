@@ -1,0 +1,178 @@
+<!-- Maybe implement some sort of tab system where users can close sections of the website?-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_nord_</title>
+
+    <!-- css imports -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./marquee.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- js imports -->
+    <script src="./js/marquee_scripts/last_played.js" defer></script>
+    <script src="./js/marquee_scripts/hit_count+last_updated.js" defer></script>
+    <script src="./js/marquee_scripts/marquee_controls.js"></script>
+    <script src="./js/bouncing_nord.js" defer></script>
+    <script src="./js/website_lights.js" defer></script>
+</head>
+<body>
+    <img id="nord" src="./images/nordspin.gif" draggable="false" alt="bouncing nord :)">
+    <img id="lightswitch" src="./images/on_switch.png" alt="" draggable="false" onclick="toggle_switch(this)">
+    <div id="content_block">
+
+        <div id="marquee_container">
+            <!-- Marquee -->
+            <div class="scrolling-text-container">
+                <div class="scrolling-text-inner" style="--marquee-speed: 45s; --direction:scroll-left" role="marquee">
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">Did you know? This website is never abandoned!!</div>
+                        <div class="scrolling-text-item">I am currently listening to: <span class="song">NOTHING!</span></div>
+                        <div class="scrolling-text-item">The last time I updated this website was: <span class="lastupdate">Loading...</span></div>
+                        <div class="scrolling-text-item">You are the <span class="hitcount">0</span>th person to visit this website!</div>
+                    </div>
+                    <div class="scrolling-text">
+                        <div class="scrolling-text-item">Did you know? This website is never abandoned!!</div>
+                        <div class="scrolling-text-item">I am currently listening to: <span class="song">NOTHING!</span></div>
+                        <div class="scrolling-text-item">The last time I updated this website was: <span class="lastupdate">Loading...</span></div>
+                        <div class="scrolling-text-item">You are the <span class="hitcount">0</span>th person to visit this website!</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- marquee pause button -->
+            <img id="marquee_controls" onclick="change_marquee_image()" src="./images/pause.GIF" style="width: 100px;">
+        </div>
+    <h2 class="text" style="padding-left: 10px;">hi i'm nord and welcome to my neocity.</h2>                    
+    
+    <h2 class="text" style="padding-left: 10px;">here are some things i like:</h2>
+    <div id="interests_table" style="padding-left: 10px; padding-right: 10px;">
+                    <div style="display: flex; width: 100%;">
+                        <!-- Games Column -->
+                        <div class="column-container">
+                            <div class="column-header">games</div>
+                            <div class="column-scroll">
+                                <div class="column-item">cs2</div>
+                                <div class="column-item">dark souls games (all of them)</div>
+                                <div class="column-item">despelote</div>
+                                <div class="column-item">furi</div>
+                                <div class="column-item">homm3</div>
+                                <div class="column-item">disco elysium</div>
+                                <div class="column-item">nier automata & replicant</div>
+                                <div class="column-item">babbdi</div>
+                                <div class="column-item">echo point nova</div>
+                                <div class="column-item">monster hunter world/rise/wilds</div>
+                                <div class="column-item">inscryption</div>
+                                <div class="column-item">god of war (the new ones)</div>
+                                <div class="column-item">neighbours from hell (obviously)</div>
+                                <div class="column-item">etc. etc.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Music Column -->
+                        <div class="column-container">
+                            <div class="column-header">music</div>
+                            <div class="column-scroll">
+                                <div class="column-item">topsters: <a href="./images/topsters/2022_topster.png" target="_blank">2022</a>, <a href="./images/topsters/early_2025_topster.png" target="_blank">april 2025</a>, <a href="./images/topsters/late_2025_topster.png" target="_blank">november 2025</a>, <a href="./images/topsters/march 2026.png" target="_blank">march 2026</a></div>
+                                <div class="column-item">the mars volta</div>
+                                <div class="column-item">mgmt</div>
+                                <div class="column-item">состояние птиц (sostoyanie ptits)</div>
+                                <div class="column-item">психея (psychea)</div>
+                                <div class="column-item">maruja</div>
+                                <div class="column-item">blood brothers</div>
+                                <div class="column-item">fall of troy</div>
+                                <div class="column-item">hail the sun</div>
+                                <div class="column-item">streetlight manifesto</div>
+                                <div class="column-item">psychedelic porn crumpets</div>
+                                <div class="column-item">system of a down</div>
+                                <div class="column-item">etc. etc.</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <h2 class="text" style="padding-left: 10px;">here are some things i wrote: (this part of the website does not work yet...)</h2>
+        <div style="padding-left: 10px; padding-right: 10px;">
+            <div class="column-container" >
+                <div class="column-scroll">
+                    <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
+                    <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
+                    <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
+                    <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
+                    <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text" style="padding-left: 10px;">thank you for visiting.</h2>
+        <div id="exit_links">
+            <h2 class="text" style="padding-left: 10px;">please sign the guestbook and feed the creature before you leave:</h2>
+            <div>
+                <a href="https://nord.atabook.org/" target="_blank">
+                    <img src="./images/guestbook_still.png" onmouseenter="this.src='./images/guestbook2.gif'" onmouseleave="this.src='./images/guestbook_still.png'" style="width: 200px; height: 150px; object-fit: contain;">
+                </a>
+                <a href="https://tamanotchi.world/27943c" target="_blank">
+                    <img src="./images/cage_still.png" onmouseenter="this.src='./images/cage.gif'" onmouseleave="this.src='./images/cage_still.png'" style="width: 175px; height: 150px; object-fit: contain;">
+                </a>
+            </div>
+        </div>
+        <div id="fire_container">
+            <img src="images/fire2.gif" alt="fire">
+            <img src="images/fire2.gif" alt="fire">
+        </div>
+    </div>
+
+    <!-- button_marquee -->
+    <div class="scrolling-text-container" id="button_marquee">
+        <div class="scrolling-text-inner" style="--marquee-speed: 50s; --direction:scroll-right" role="marquee">
+            <div class="scrolling-text">
+                <div class="scrolling-text-item"><a href="https://buttoncollection.neocities.org/"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.google.com/search?q=website"><img src="images\buttons\7.gif"></a></div>
+                <div class="scrolling-text-item"><a href="images\eyes.jpg"><img src="images\buttons\bestview.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://blog.spacehey.com/entry?id=1419772"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://qntm.org/camtime"><img src="images\buttons\camtime.png"></a></div>
+                <div class="scrolling-text-item"><a href="https://music.apple.com/ca/album/more-crazy-hits/918460366"><img src="images\buttons\crazyfrog.gif"></a></div>              
+                <div class="scrolling-text-item"><a href="https://windscribe.com/blog/get-away-from-google/"><img src="images\buttons\fckgoogle.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.firefox.com/en-US/?utm_campaign=SET_DEFAULT_BROWSER"><img src="images\buttons\firefox4.gif"></a></div>                
+                <div class="scrolling-text-item"><a href="https://uscpr.org/activist-resource/palestine-101/"><img src="images\buttons\freegaza.gif"></a></div>            
+                <div class="scrolling-text-item"><a href="https://www.java.com/en/download/manual.jsp"><img src="images\buttons\java2.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://support.apple.com/en-us/111867"><img src="images\buttons\macbutton.gif"></a></div>               
+                <div class="scrolling-text-item"><a href="https://store.steampowered.com/app/17410/Mirrors_Edge/"><img src="images\buttons\me_released.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.corsair.com/us/en/p/gaming-mouse/ch-9307011-na/ironclaw-rgb-fps-moba-gaming-mouse-ch-9307011-na"><img src="images\buttons\mousemade.gif"></a></div>                
+                <div class="scrolling-text-item"><a href="https://www.slsknet.org/news/"><img src="images\buttons\MP3 4 Real 3.jpg"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.youtube.com/watch?v=sYGZ3t0wRuk&"><img src="images\buttons\mysterysite.gif"></a></div>                
+                <div class="scrolling-text-item"><a href="https://neocities.org/"><img src="images\buttons\neocities_hosted.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://neocities.org/"><img src="images\buttons\neocities2bit.png"></a></div>               
+                <div class="scrolling-text-item"><a href="https://machin3gir1.com/"><img src="images\buttons\newbutton.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.newegg.com/"><img src="images\buttons\newegg.png"></a></div>               
+                <div class="scrolling-text-item"><a href="https://github.com/pyllyukko/user.js/tree/relaxed"><img src="images\buttons\nogluck.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://userinyerface.com/"><img src="images\buttons\sucks.gif"></a></div>               
+                <div class="scrolling-text-item"><a href="images\designing.jpg"><img src="images\buttons\webpassion.gif"></a></div>                
+            </div>
+            <div class="scrolling-text">
+                <div class="scrolling-text-item"><a href="https://buttoncollection.neocities.org/"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.google.com/search?q=website"><img src="images\buttons\7.gif"></a></div>
+                <div class="scrolling-text-item"><a href="images\eyes.jpg"><img src="images\buttons\bestview.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://blog.spacehey.com/entry?id=1419772"><img src="images\buttons\3FREEBUTTONS.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://qntm.org/camtime"><img src="images\buttons\camtime.png"></a></div>
+                <div class="scrolling-text-item"><a href="https://music.apple.com/ca/album/more-crazy-hits/918460366"><img src="images\buttons\crazyfrog.gif"></a></div>              
+                <div class="scrolling-text-item"><a href="https://windscribe.com/blog/get-away-from-google/"><img src="images\buttons\fckgoogle.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.firefox.com/en-US/?utm_campaign=SET_DEFAULT_BROWSER"><img src="images\buttons\firefox4.gif"></a></div>                
+                <div class="scrolling-text-item"><a href="https://uscpr.org/activist-resource/palestine-101/"><img src="images\buttons\freegaza.gif"></a></div>            
+                <div class="scrolling-text-item"><a href="https://www.java.com/en/download/manual.jsp"><img src="images\buttons\java2.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://support.apple.com/en-us/111867"><img src="images\buttons\macbutton.gif"></a></div>               
+                <div class="scrolling-text-item"><a href="https://store.steampowered.com/app/17410/Mirrors_Edge/"><img src="images\buttons\me_released.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.corsair.com/us/en/p/gaming-mouse/ch-9307011-na/ironclaw-rgb-fps-moba-gaming-mouse-ch-9307011-na"><img src="images\buttons\mousemade.gif"></a></div>                
+                <div class="scrolling-text-item"><a href="https://www.slsknet.org/news/"><img src="images\buttons\MP3 4 Real 3.jpg"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.youtube.com/watch?v=sYGZ3t0wRuk&"><img src="images\buttons\mysterysite.gif"></a></div>                
+                <div class="scrolling-text-item"><a href="https://neocities.org/"><img src="images\buttons\neocities_hosted.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://neocities.org/"><img src="images\buttons\neocities2bit.png"></a></div>               
+                <div class="scrolling-text-item"><a href="https://machin3gir1.com/"><img src="images\buttons\newbutton.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://www.newegg.com/"><img src="images\buttons\newegg.png"></a></div>               
+                <div class="scrolling-text-item"><a href="https://github.com/pyllyukko/user.js/tree/relaxed"><img src="images\buttons\nogluck.gif"></a></div>
+                <div class="scrolling-text-item"><a href="https://userinyerface.com/"><img src="images\buttons\sucks.gif"></a></div>               
+                <div class="scrolling-text-item"><a href="images\designing.jpg"><img src="images\buttons\webpassion.gif"></a></div>                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
