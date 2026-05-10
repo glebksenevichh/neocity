@@ -69,12 +69,6 @@ a:visited
   position: relative;
 }
 
-#welcome_container img
-{
-  width: 250px;
-  border: 5px white outset;
-}
-
 #interests_table
 {
   display: flex;
@@ -121,41 +115,9 @@ a:visited
   border-bottom: none;
 }
 
-#fun_buttons
-{
-  display: flex;
-  justify-content: space-around; 
-}
-
-#fun_buttons img
-{
-  max-width: 100px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
-
-  padding: 10px;
-  border: none;
-}
-
 .text
 {
   color: white;
-}
-
-.heading
-{
-  text-align: center;
-  text-decoration: underline;
-  padding: 50px 0px;
-}
-
-.post
-{
-  width: 95%;
-  height: auto;
-  margin: auto;
-  border: white 5px solid;
 }
 
 #exit_links
