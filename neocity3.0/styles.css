@@ -75,14 +75,13 @@ a:visited
   justify-content: center;
   align-items: center;
 
-  padding-top: 1rem;
+  padding-top: 2.5rem;
   overflow: hidden;
 }
 
 .spray_pattern
 {
-
-
+  max-width: 200px;
 }
 
 #interests_table
@@ -136,26 +135,67 @@ a:visited
   color: white;
 }
 
+#img_carousel
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    gap: 0;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0;
+    margin: 0;
+}
+
+#img_carousel img
+{
+    width: clamp(300px, 40vw, 1000px);
+    height: auto;
+}
+#img_carousel li
+{
+    list-style: none;
+
+    min-width: 100%;      /* each image gets its own "page" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
 #exit_links
 {
   display: flex;
-  flex-direction: column;
 }
 
 #fire_container
 {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   display: flex;
   gap: 0;
 }
 
+#fire_container_upside_down
+{
+  position: absolute;
+  top: 53;
+  width: 100%;
+  display: flex;
+  gap: 0;
+}
+
+#fire_container_upside_down img
+{
+  width: 50%;
+}
+
 #fire_container img
 {
-  flex: 1;
   width: 50%;
-  height: auto;
-  display: block;
 }

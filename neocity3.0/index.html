@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +16,7 @@
     <script src="./js/marquee_scripts/marquee_controls.js"></script>
     <script src="./js/bouncing_nord.js" defer></script>
     <script src="./js/website_lights.js" defer></script>
+    <script src="./js/interests_toggle.js" defer></script>
 </head>
 <body>
     <img id="nord" src="./images/nordspin.gif" draggable="false" alt="bouncing nord :)">
@@ -41,116 +43,46 @@
             <!-- marquee pause button -->
             <img id="marquee_controls" onclick="change_marquee_image()" src="./images/pause.GIF" style="width: 100px;">
         </div>
-    <div id="welcome_text">
-        <img src="./images/dividers/ak47_spray_pattern.png" class="spray_pattern">
-        <h2 class="text" style="text-align: center; font-size: 2.5rem;">hi i'm nord and welcome to my neocity.</h2>                    
-        <img src="./images/dividers/ak47_spray_pattern_mirrored.png" class="spray_pattern">
-    </div>
-    
-    <h2 class="text" style="padding-left: 10px; text-align: center; font-size: 2rem;">!: here are some things i like :!</h2>
-    <div id="interests_table" style="padding-left: 10rem; padding-right: 10rem;">
-                    <div style="display: flex; width: 100%;">
-                        <!-- games column -->
-                        <div class="column-container">
-                            <div class="column-header">games</div>
-                            <div class="column-scroll">
-                                <div class="column-item">cs2</div>
-                                <div class="column-item">dark souls games (all of them)</div>
-                                <div class="column-item">despelote</div>
-                                <div class="column-item">furi</div>
-                                <div class="column-item">heroes of might and magic 3</div>
-                                <div class="column-item">disco elysium</div>
-                                <div class="column-item">nier automata & replicant</div>
-                                <div class="column-item">babbdi</div>
-                                <div class="column-item">echo point nova</div>
-                                <div class="column-item">monster hunter world/rise/wilds</div>
-                                <div class="column-item">inscryption</div>
-                                <div class="column-item">god of war (the new ones)</div>
-                                <div class="column-item">neighbours from hell</div>
-                                <div class="column-item">mirror's edge</div>
-                                <div class="column-item">battlefield bad_company_2/1/5</div>
-                                <div class="column-item">deadlock</div>
-                                <div class="column-item">sludge life 1 & 2</div>
-                                <div class="column-item">sunset overdrive</div>
-                                <div class="column-item">etc. etc.</div>
-                            </div>
-                        </div>
-                        
-                        <!-- music column -->
-                        <div class="column-container">
-                            <div class="column-header">music</div>
-                            <div class="column-scroll">
-                                <div class="column-item">topsters: <a href="./images/topsters/2022_topster.png" target="_blank">2022</a>, <a href="./images/topsters/early_2025_topster.png" target="_blank">april 2025</a>, <a href="./images/topsters/late_2025_topster.png" target="_blank">november 2025</a>, <a href="./images/topsters/march 2026.png" target="_blank">march 2026</a></div>
-                                <div class="column-item">the mars volta</div>
-                                <div class="column-item">mgmt</div>
-                                <div class="column-item">состояние птиц </div>
-                                <div class="column-item">психея (psychea)</div>
-                                <div class="column-item">maruja</div>
-                                <div class="column-item">blood brothers</div>
-                                <div class="column-item">fall of troy</div>
-                                <div class="column-item">hail the sun</div>
-                                <div class="column-item">streetlight manifesto</div>
-                                <div class="column-item">psychedelic porn crumpets</div>
-                                <div class="column-item">system of a down</div>
-                                <div class="column-item">glassjaw</div>
-                                <div class="column-item">црвених цветова</div>
-                                <div class="column-item">источник</div>
-                                <div class="column-item">secret band</div>
-                                <div class="column-item">ultra deluxe</div>
-                                <div class="column-item">thursday</div>
-                                <div class="column-item">hey ily</div>
-                                <div class="column-item">emma harner</div>
-                                <div class="column-item">nick drake</div>
-                                <div class="column-item">#####</div>
-                                <div class="column-item">bassvictim</div>
-                                <div class="column-item">hayworth</div>
-                                <div class="column-item">hopesfall</div>
-                                <div class="column-item">poison the well</div>
-                                <div class="column-item">шумные и угрожающие выходки</div>
-                                <div class="column-item">these arms are snakes</div>
-                                <div class="column-item">dis[like]</div>
-                                <div class="column-item">оля и монстр</div>
-                                <div class="column-item">the jonbenet</div>
-                                <div class="column-item">the early november</div>
-                                <div class="column-item">etc. etc.</div>
-                            </div>
-                        </div>
-                    </div>
+
+        <div id="fire_container_upside_down">
+                <img src="images/fire2_white_upside_down.gif" alt="fire">
+                <img src="images/fire2_white_upside_down.gif" alt="fire">
+        </div>
+
+        <div id="welcome_text">
+            <img src="./images/dividers/ak47_spray_pattern.png" class="spray_pattern">
+            <h2 class="text" style="text-align: center; font-size: 2.5rem;">hi i'm nord and welcome to my neocity.</h2>                    
+            <img src="./images/dividers/ak47_spray_pattern_mirrored.png" class="spray_pattern">
         </div>
         
-        <div style="padding-left: 10px; padding-right: 10px; display: flex;" id="">
+        <p class="text" style="padding-left: 10px; text-align: center; font-size: 2rem; cursor: pointer; user-select: none; text-decoration: underline;" onclick="toggle_section(this, 'interests_table')"><span class="arrow">:></span> here are some <b>things i like</b> <span class="arrow"><:</span></p>
+        <div id="interests_table" style="padding-left: 10rem; padding-right: 10rem;"></div>
+        
+        
+        <div style="padding-left: 10px; padding-right: 10px; display: flex;">
             <div style="margin: auto;">
-                <h2 class="text" style="font-size: 2rem;">#: here are some things i wrote :#</h2>
-                <div class="column-container" >
-                    <div class="column-scroll">
-                        <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
-                        <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
-                        <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
-                        <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
-                        <div class="column-item"><a href="">nord neocity 1.0 is live!</a></div>
-                    </div>
-                </div>
+                <p class="text" style="font-size: 2rem; cursor: pointer; user-select: none; text-decoration: underline;" onclick="toggle_section(this, 'g')"><span class="arrow">:></span> here are some <b>things i wrote</b> <span class="arrow"><:</span></p>
             </div>
         </div>
 
-        <h2 class="text" style="text-align: center; font-size: 2rem;">*: please sign the guestbook and feed the creature before you leave. :*</h2>
-        <div id="exit_links">
+        <div style="padding-left: 10px; padding-right: 10px; display: flex;">
             <div style="margin: auto;">
-                <a href="https://nord.atabook.org/" target="_blank">
-                    <img src="./images/guestbook_still.png" onmouseenter="this.src='./images/guestbook2.gif'" onmouseleave="this.src='./images/guestbook_still.png'" style="width: 200px; height: 150px; object-fit: contain;">
-                </a>
-                <a href="https://tamanotchi.world/27943c" target="_blank">
-                    <img src="./images/cage_still.png" onmouseenter="this.src='./images/cage.gif'" onmouseleave="this.src='./images/cage_still.png'" style="width: 175px; height: 150px; object-fit: contain;">
-                </a>
+                <p class="text" style="font-size: 2rem; cursor: pointer; user-select: none; text-decoration: underline;" onclick="toggle_section(this, 'images')"><span class="arrow">:></span> here are some <b>pictures i took</b> <span class="arrow"><:</span></p>
             </div>
         </div>
-        <h2 class="text" style="text-align: center; font-size: 2rem;">thank you for visiting my website. &lt;/html&gt;</h2>
+        <div id="images" style="padding-left: clamp(1rem, 8vw, 10rem); padding-right: clamp(1rem, 8vw, 10rem);">
+        </div>
+
+
+        <p class="text" style="text-align: center; font-size: 2rem; padding-bottom: 1.5rem;">*: please <a href="https://nord.atabook.org/"  target="_blank"> <b>sign the guestbook</b> </a> and <a href="https://tamanotchi.world/27943c"  target="_blank"> <b>feed the creature</b> </a> before you leave. :*</p>
+        <p class="text" style="text-align: center; font-size: 2rem;"><b>thank you</b> for visiting my website. &lt;/html&gt;</p>
 
         <div id="fire_container">
-            <img src="images/fire2.gif" alt="fire">
-            <img src="images/fire2.gif" alt="fire">
+            <img src="images/fire2_white.gif" alt="fire">
+            <img src="images/fire2_white.gif" alt="fire">
         </div>
     </div>
+    
 
     <!-- button_marquee -->
     <div class="scrolling-text-container" id="button_marquee">
