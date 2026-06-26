@@ -75,7 +75,7 @@ a:visited
   justify-content: center;
   align-items: center;
 
-  padding-top: 2.5rem;
+  padding-top: clamp(0px, 1.5vw, 50px);
   overflow: hidden;
 }
 
@@ -98,7 +98,6 @@ a:visited
 
 .column-container
 {
-  flex: 1;
   border: 1px solid white;
 }
 
@@ -192,10 +191,12 @@ a:visited
 
 #fire_container_upside_down img
 {
-  width: 50%;
+  height: clamp(25px, 1.2vw, 30px);
+  width: 100%;
 }
 
 #fire_container img
 {
-  width: 50%;
+  height: clamp(25px, 1.2vw, 30px);
+  width: 100%;
 }

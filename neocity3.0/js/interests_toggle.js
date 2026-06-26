@@ -1,6 +1,6 @@
 const content = {
     interests_table: `
-<div style="display: flex; width: 100%;">
+<div>
                         <!-- games column -->
                         <div class="column-container">
                             <div class="column-header">games</div>
