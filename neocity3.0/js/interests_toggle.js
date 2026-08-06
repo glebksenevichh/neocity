@@ -68,14 +68,21 @@ const content = {
                         </div>
                     </div>
     `,
-    images: `            <ul id="img_carousel">
-                <li data-accName="img_1" class="text">
-                    <img src="./images/gallery/image_1.jpg">
-                </li>
-                <li data-accName="img_2" class="text">
-                    <img src="./images/gallery/image_2.jpg">
-                </li>
+    images: `<ul id="img_carousel">
+                <li id="img1">
+                    <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: -500, behavior: 'smooth'})"><--</button>
 
+                    <img class="main" src="./images/gallery/image_1.jpg">
+
+                    <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: 500, behavior: 'smooth'})">--></button>                
+                </li>
+                <li id="img2">
+                    <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: -500, behavior: 'smooth'})"><--</button>
+
+                    <img class="main" src="./images/gallery/image_2.jpg">
+
+                    <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: 500, behavior: 'smooth'})">--></button>                
+                </li>
             </ul>`
 };
 

@@ -1,3 +1,8 @@
+html
+{
+      scroll-behavior: smooth;
+}
+
 body 
 {
   background-image: url("images/page_bg.png");
@@ -20,16 +25,53 @@ a:visited
   color: white;
 }
 
+#sidebar
+{
+    position: absolute;
+    top: 8%;
+    left: 88vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 #lightswitch
 {
-  cursor: pointer;
-  width: clamp(50px, 3vw, 60px);
+    cursor: pointer;
+    width: clamp(50px, 3vw, 60px);
+    user-select: none;
+        transform: translateX(30px);
 
-  position: absolute;
-  left: 92.5%;
-
-  user-select: none;
 }
+
+#guestbook,
+#pet
+{
+    position: static;
+    transform: translateX(30px);
+    
+}
+#pet
+{
+    transform: translateX(45px);
+}
+
+#guestbook img
+{
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+#pet img
+{
+    width: 175px;
+    height: 150px;
+    object-fit: contain;
+}
+
 @media (max-width: 850px) 
 {
     #lightswitch 
@@ -134,6 +176,17 @@ a:visited
   color: white;
 }
 
+.dropdown
+{
+  color: rgb(255, 255, 255);
+}
+
+.dropdown:hover
+{
+  color: rgb(102, 205, 133);
+}
+
+
 #img_carousel
 {
     display: flex;
@@ -144,6 +197,7 @@ a:visited
 
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scroll-padding: 0;
     padding: 0;
     margin: 0;
 }
@@ -163,7 +217,21 @@ a:visited
     align-items: center;
 
     overflow: hidden;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
+}
+
+.carousel_arrow
+{
+  opacity: 0.7;
+  font-size: 55px;
+  color: white;
+
+  background: none;
+  border: none;
+}
+.carousel_arrow:hover
+{
+  opacity: 1;
 }
 
 #exit_links
@@ -178,15 +246,17 @@ a:visited
   width: 100%;
   display: flex;
   gap: 0;
+  overflow:hidden;
 }
 
 #fire_container_upside_down
 {
   position: absolute;
-  top: 53;
+  top: 53px;
   width: 100%;
   display: flex;
   gap: 0;
+  overflow:hidden;
 }
 
 #fire_container_upside_down img
