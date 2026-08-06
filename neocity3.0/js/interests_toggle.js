@@ -72,14 +72,14 @@ const content = {
                 <li id="img1">
                     <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: -500, behavior: 'smooth'})"><--</button>
 
-                    <img class="main" src="./images/gallery/image_1.jpg">
+                    <img class="main" src="./images/gallery/gleg7.4.38.png">
 
                     <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: 500, behavior: 'smooth'})">--></button>                
                 </li>
                 <li id="img2">
                     <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: -500, behavior: 'smooth'})"><--</button>
 
-                    <img class="main" src="./images/gallery/image_2.jpg">
+                    <a href="https://steamprofile.com?profile=76561198181048481"><img src="https://steamprofile.com/signature/76561198181048481.png" alt="nord Steam Signature"/></a>
 
                     <button class="carousel_arrow" onclick="document.getElementById('img_carousel').scrollBy({left: 500, behavior: 'smooth'})">--></button>                
                 </li>
